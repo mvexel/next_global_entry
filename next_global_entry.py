@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 """Check for Global Entry interview openings in your city."""
 
 import sys
