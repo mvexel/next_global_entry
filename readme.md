@@ -14,3 +14,5 @@ This script uses the new (2017-10) but undocumented API at `https://ttp.cbp.dhs.
   - Enter your Twilio ['from' phone number](https://www.twilio.com/console/phone-numbers)  - - Enter your desired destination cell number, amount of weeks to look ahead, and your city search string.
 - add this script to your crontab (see [virtualenv notes](https://stackoverflow.com/questions/3287038/cron-and-virtualenv))
 - wait for it
+
+*A [Two Hour Project](http://ma.rtijn.org/two-hour-projects/)*
