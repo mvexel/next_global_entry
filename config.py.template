@@ -1,0 +1,16 @@
+"""Configuration for next_global_entry."""
+
+# twilio account details
+twilio_account = "AC___"
+twilio_token = "___"
+twilio_from_number = "+1___"
+
+# user strings
+to_number = "+1___"
+look_ahead_weeks = 4  # number of weeks to look ahead
+search_string = ""  # city where you want to have your interview
+
+# don't edit this
+global_entry_query_url = "https://ttp.cbp.dhs.gov/schedulerapi/slots/\
+asLocations?minimum=1&filterTimestampBy=before&timestamp={timestamp}&\
+serviceName=Global%20Entry"
