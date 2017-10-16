@@ -7,6 +7,14 @@ import requests
 from twilio.rest import Client
 import config
 
+
+def log(text):
+    """Write a one-line log message."""
+    print("{dt}\t{msg}".format(
+        dt=datetime.datetime.now(),
+        msg=text))
+
+
 if __name__ == '__main__':
     # calculate date
     now = datetime.datetime.now()
@@ -23,5 +31,7 @@ if __name__ == '__main__':
             from_=config.twilio_from_number,
             body="Global Entry interview opportunity in {} \
 opened up just now!".format(config.search_string))
+        log("text message sent")
         sys.exit(0)
+    log("no news")
     sys.exit(1)
