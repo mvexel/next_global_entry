@@ -14,7 +14,6 @@ if __name__ == '__main__':
     future = now + delta
     request_url = config.global_entry_query_url.format(
         timestamp=future.strftime("%Y-%m-%d"))
-    print(request_url)
     result = requests.get(request_url).json()
     cities = [o.get('city').lower() for o in result]
     if config.search_string.lower() in cities:
