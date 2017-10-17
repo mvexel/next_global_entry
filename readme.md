@@ -4,6 +4,8 @@ Scheduling an interview for your Global Entry application is hard. Some enrollme
 
 This script uses the new (2017-10) but undocumented API at `https://ttp.cbp.dhs.gov/schedulerapi/slots/asLocations` to inform you of Global Entry interview openings.
 
+*There is [another project](https://github.com/oliversong/goes-notifier) on GitHub that used to accomplish the same thing, but the new DHS web site broke it. I found it only after I got this thing working, so I thought I'd post this anyway for whomever may benefit from it.*
+
 ## Setup
 
 - If you don't have a Twilio account, [create one]() for free, and create a free [phone number](https://www.twilio.com/console/phone-numbers). This is where your texts will originate from.
